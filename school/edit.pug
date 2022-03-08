@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title EDIT SCHOOL MARKS
+        
+    body 
+        .navbar.navbar-expand-lg.navbar-dark.bg-dark 
+            .container 
+                a.navbar-brand(href="") SCHOOL 
+        .container.mt-5 
+            .row 
+                .col-lg-4.mx-auto 
+                    .card.bg-dark 
+                        .card-body.mx-auto.bg-dark 
+                            form(action=`${"/edit/"+data._id}`, method="post")  
+                                .mb-3 
+                                    label(for="") NAME 
+                                    input(type="text" name="name" , value=`${data.name}`).form-control
+                                .mb-3 
+                                    label(for="") PHONE 
+                                    input(type="number" name="phone" , value=`${data.phone}`).form-control
+                                .mb-3 
+                                    label(for="") EMAIL 
+                                    input(type="email" name="email" , value=`${data.email}`).form-control
+                                .mb-3 
+                                    label(for="") MATHS 
+                                    input(type="number" name="maths" , value=`${data.maths}`).form-control
+                                .mb-3 
+                                    label(for="") SCIENCE 
+                                    input(type="number" name="sci" , value=`${data.sci}`).form-control
+                                .mb-3 
+                                    label(for="") SSt 
+                                    input(type="number" name="sst" , value=`${data.sst}`).form-control
+                                .mb-3 
+                                    label(for="") ENGLISH 
+                                    input(type="number" name="eng" , value=`${data.eng}`).form-control
+                                .mb-3 
+                                    label(for="") HINDI 
+                                    input(type="number" name="hindi" , value=`${data.hindi}`).form-control
+                                .mb-3 
+                                    input.btn.btn-danger(type="submit" ,name="submit")
+                                
